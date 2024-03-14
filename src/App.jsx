@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Piece from "./components/Piece";
 import clothes from "./data/clothes";
 import "./App.css";
+import LoginPage from "./pages/Login/LoginPage";
 
 // Create a new Piece component for every one that exists in our database.
 // Could have something like:
@@ -19,6 +20,7 @@ function App() {
       {images.map((piece, index) => (
         <Piece key={index} id={index} type={piece.type} imgURL={piece.imgURL} />
       ))}
+      <LoginPage />
     </div>
   );
 }
